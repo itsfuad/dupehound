@@ -1,0 +1,3 @@
+1024 bytes, 2 copies:
+  /mnt/archive/photos/portrait.jpg
+  /mnt/backup/photos/portrait.jpg
