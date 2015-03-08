@@ -6,6 +6,8 @@ import hashlib
 def walk_files(roots):
     """Yield normal files; skip symbolic links and unreadable directories."""
     for root in roots:
+        if not os.path.exists(root):
+            continue
         if os.path.isfile(root) and not os.path.islink(root):
             yield root
             continue
